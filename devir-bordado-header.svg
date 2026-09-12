@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200">
+  <defs>
+    <style>
+      .fio { stroke: #951822; stroke-width: 1.5; fill: none; opacity: 0.6; }
+      .bastidor { stroke: #74415B; stroke-width: 2; fill: none; }
+      .clave { fill: #74415B; }
+      .bit { fill: #B8A893; font-family: monospace; font-size: 14px; opacity: 0; }
+      .bit-anim { animation: aparecer 6s ease-in-out infinite; }
+      @keyframes aparecer {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 0.8; }
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="800" height="200" fill="#F5EFE3"/>
+
+  <!-- Fio de bordado -->
+  <line x1="40" y1="100" x2="760" y2="100" class="fio"/>
+
+  <!-- Bastidor (início) -->
+  <circle cx="80" cy="100" r="22" class="bastidor"/>
+  <line x1="68" y1="88" x2="92" y2="112" class="bastidor"/>
+  <line x1="92" y1="88" x2="68" y2="112" class="bastidor"/>
+
+  <!-- Clave de fá (meio) -->
+  <text x="390" y="115" font-family="Georgia, serif" font-size="64" fill="#74415B" text-anchor="middle">𝄢</text>
+
+  <!-- Bits (fim) -->
+  <text x="600" y="105" class="bit bit-anim" style="animation-delay: 0s;">0</text>
+  <text x="620" y="105" class="bit bit-anim" style="animation-delay: 1s;">1</text>
+  <text x="640" y="105" class="bit bit-anim" style="animation-delay: 2s;">0</text>
+  <text x="660" y="105" class="bit bit-anim" style="animation-delay: 3s;">1</text>
+  <text x="680" y="105" class="bit bit-anim" style="animation-delay: 4s;">1</text>
+  <text x="700" y="105" class="bit bit-anim" style="animation-delay: 5s;">0</text>
+</svg>
